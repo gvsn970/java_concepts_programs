@@ -1,6 +1,7 @@
 package com.date;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class lamdaexpressions {
 
@@ -12,5 +13,8 @@ public class lamdaexpressions {
 		al.add(31);
 		al.add(3);
 		al.stream().sorted((i1,i2)->(i1<i2)?1:(i1>i2)?-1:0).forEach(System.out:: println);;
+		
+		Collections.sort(al);
+		System.out.println();
 	}
 }
