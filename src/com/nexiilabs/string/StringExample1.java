@@ -9,6 +9,10 @@ public class StringExample1 {
 	public static void main(String[] args) {
 		String s="surya";
 		s=s.concat("narayana");
+		
+		String s2=new String("sasdas");
+		System.out.println(s2);
+		System.out.println(s2);
 		System.out.println(s);
 		"abc".charAt(0);
 		

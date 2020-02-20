@@ -10,6 +10,6 @@ public class Receiver {
 		FileInputStream fis=new FileInputStream("C:\\Users\\nexii\\Desktop\\abc5.txt");
 		ObjectInputStream ois=new ObjectInputStream(fis);
 		ServicalUID a2=(ServicalUID)ois.readObject();
-		System.out.println(a2.i+"   "+a2.j);
+		System.out.println(a2.i+"   "+a2.j +"   "+a2.d);
 	}
 }
