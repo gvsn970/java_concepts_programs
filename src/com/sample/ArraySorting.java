@@ -26,7 +26,7 @@ public class ArraySorting {
 		 * Collections.sort method is sorting the elements of ArrayList in ascending
 		 * order.
 		 */
-		String s[] = { "D", "A", "F" };
+		/*String s[] = { "D", "A", "F" };
 		// String s="D,A";
 
 		List<String> al = new ArrayList<String>();
@@ -38,7 +38,29 @@ public class ArraySorting {
 		 for (int j = 0; j < al.size(); j++) { 
 			  
 			 finalArr[j] = al.get(j); 
-	        } 
+	        } */
+		
+		
+		  String str = "welcome";
+		    char temp = 0;
+
+		    char arr[] = str.toCharArray();
+		    for (int i = 0; i < arr.length; i++)
+		    {
+		      for (int j = 0; j < arr.length; j++)
+		      {  
+		        if (arr[j] > arr[i])
+		        {
+		            temp = arr[i];
+		            arr[i] = arr[j];
+		            arr[j] = temp;
+		        }
+		      }
+		    }
+		    for (int i = 0; i < arr.length; i++)
+		    {
+		      System.out.print(arr[i]);
+		    }
 	  
 		
 	}

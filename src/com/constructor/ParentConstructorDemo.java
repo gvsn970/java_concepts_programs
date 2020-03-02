@@ -21,7 +21,7 @@ public class ParentConstructorDemo extends Person {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ParentConstructorDemo ccd=new ParentConstructorDemo("surya", 24,90, 101);
-		System.out.println();
+		System.out.println(ccd);
 
 	}
 

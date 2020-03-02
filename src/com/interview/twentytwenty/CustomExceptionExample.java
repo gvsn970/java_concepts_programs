@@ -13,10 +13,10 @@ public class CustomExceptionExample {
 		try {
 			validate(15);
 		} catch (Exception m) {
-			System.out.println("Exception occured: " + m.getLocalizedMessage());
+			System.out.println("Exception occured: " + m.getMessage());
 		}
 
-		System.out.println("rest of the code...");
+		//System.out.println("rest of the code...");
 	}
 
 	static void validate(int age) throws InvalidExceptionException {

@@ -9,8 +9,7 @@ public class RemoveDuplicatesFromList {
 
 	public static void main(String[] args) {
 
-		ArrayList<Integer> l = new ArrayList<>(Arrays.asList(1, 10, 1, 2, 2, 3, 3, 10, 3, 4, 5, 5));
-		;
+		ArrayList<Integer> l = new ArrayList<>(Arrays.asList(1, 10, 1, 2, 2, 3, 3, 10, 3, 4, 5, 5));;
 		System.out.println(l);
 		ArrayList<Integer> list = removeDupicates(l);
 		System.out.println(list);
