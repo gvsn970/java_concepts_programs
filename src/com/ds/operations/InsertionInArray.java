@@ -28,7 +28,6 @@ public class InsertionInArray {
 		int ele = s.nextInt();
 		for (int i = size-1; i >= pos-1; i--) {
 			arry[i+1] = arry[i];
-			
 		}
 		arry[pos-1] = ele;
 		System.out.println("Final Elements: ");

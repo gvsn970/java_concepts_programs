@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class DemoCollection  extends Thread{
 	
-	static ArrayList al=new ArrayList<>();
+	static ArrayList<String> al=new ArrayList<>();
 	
 	public void run(){
 		try{
@@ -23,10 +23,10 @@ public class DemoCollection  extends Thread{
 		al.add("C");
 		DemoCollection dc=new DemoCollection();
 		dc.start();
-		Iterator it=al.iterator();
+		Iterator<?> it=al.iterator();
 		while(it.hasNext()){
 			String s1=(String)it.next();
-			System.out.println("main thred itrartingLIst and Current Object is:"+s1);
+			System.out.println("main thred itrarting LIst and Current Object is:"+s1);
 			
 			Thread.sleep(3000);
 		}

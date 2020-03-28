@@ -17,7 +17,7 @@ public class LinearSearchInArry {
 		s.close();
 		for(int i=0;i<a.length;i++) {
 			if(a[i]== searchElement) {
-				System.out.println("Element FoundAt position "+i);
+				System.out.println("Element Found At position "+i);
 				temp=temp+1;
 			}
 		}

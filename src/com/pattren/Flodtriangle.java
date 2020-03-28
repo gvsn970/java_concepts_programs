@@ -1,6 +1,5 @@
 package com.pattren;
 
-import java.util.Scanner;
 import java.util.TreeSet;
 
 public class Flodtriangle {
@@ -18,7 +17,7 @@ public class Flodtriangle {
 			}
 			System.out.println();
 		}*/
-		TreeSet t=new TreeSet<>();
+		TreeSet<Integer> t=new TreeSet<>();
 		t.add(23);
 		t.add(1);
 		t.add(2);
