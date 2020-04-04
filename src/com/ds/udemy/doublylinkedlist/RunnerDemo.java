@@ -4,16 +4,19 @@ public class RunnerDemo {
 
 	public static void main(String[] args) {
 		DoubleLinkedList  dl=new DoubleLinkedList();
-		dl.insertionEmptyListAdd(5);
+		/*dl.insertionEmptyListAdd(11);
 		dl.insertBeginning(10);
-		dl.insertElementLastNode(15);
-		dl.insertElementLastNode(20);
+		dl.insertBeginning(9);
+		dl.insertElementLastNode(12);
+		dl.lastNodeDelete();*/
+		dl.addElement(3);
+		dl.addLastNode(4);
+		dl.addLastNode(5);
+		dl.addLastNode(6);
+		dl.afterNode(55, 6);
 		dl.display();
 		System.out.println();
-		dl.insertBeforeNode(11,5);
-		dl.display();
-		System.out.println();
-		dl.deleteparicularNode(20);
-		dl.display();
+		dl.reverseDoubleLinkedList();
+	
 	}
 }

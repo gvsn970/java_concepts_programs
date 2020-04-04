@@ -4,7 +4,7 @@ public class LinkedList {
 
 	private Node start;
 
-	public void beggingAtStart(int data) {
+	/*public void beggingAtStart(int data) {
 		Node temp = new Node(data);
 		if (start == null) {
 			start = temp;
@@ -159,5 +159,135 @@ public class LinkedList {
 			}
 		}
 	}
+*/
+	public void addedFirstNode(int data) {
+		Node temp=new Node(data);
+		if(start == null) {
+			start=temp;
+		}else {
+			temp.link=start;
+			start=temp;
+					
+		}
+	}
+	public void addedElement(int data) {
+		Node temp=new Node(data);
+		if(start == null) {
+			start=temp;
+			return ;
+		}else {
+			Node p=start;
+			while(p.link !=null) {
+				p=p.link;
+			}
+			p.link=temp;
+		}
+		
+	}
+	public void display() {
+		if(start == null) {
+			System.out.println("List Is Empty..");
+			return ;
+		}
+		Node p=start;
+		while(p !=null) {
+			System.out.println(p.info);
+			p=p.link;
+		}
+	}
+	public void afterNodeInsert(int data,int nodeValue) {
+		if(start == null) {
+			System.out.println("List Is Empty..");
+			return ;
+		}
+		Node p=start;
+		Node temp = new Node(data);
+		while (p.link != null) {
+			if (p.info == nodeValue) {
+				break;
+			}
+			p = p.link;
+		}
+		temp.link = p.link;
+		p.link = temp;
+	} 
+	public void beforeNode(int data, int nodeValue) {
+		if (start == null) {
+			System.out.println("List Is Empty..");
+			return;
+		}
+		Node p = start;
+		Node temp = new Node(data);
 
+		if(start.info == nodeValue) {
+			temp.link=start;
+			start=temp;
+			return ;
+		}
+		
+		while (p.link != null) {
+			System.err.println(p.link.info);
+			if (p.link.info == nodeValue)
+				break;
+			p = p.link;
+		}
+		temp.link = p.link;
+		p.link = temp;
+	}
+	public void atPosition(int data ,int value) {
+		if (start == null) {
+			System.out.println("List Is Empty..");
+			return;
+		}
+		Node p=start;
+		Node temp=new Node(data);
+		for(int i=1;i<value-1 && p.link!=null;i++) {
+			p=p.link;
+		}
+		temp.link=p.link;
+		p.link=temp;	
+	}
+	public void deleteNodeParticlar(int data) {
+		if (start == null) {
+			System.out.println("List Is Empty..");
+			return;
+		}
+		Node p=start;
+		
+		while(p.link !=null) {
+			if(p.link.info == data)
+				break;
+			p=p.link;
+		}
+		p.link=p.link.link;
+	}
+	public void deleteFirstNode() {
+		if (start == null) {
+			System.out.println("List Is Empty..");
+			return;
+		}
+		start=start.link;
+	}
+	public void deleteLastNode() {
+		if (start == null) {
+			System.out.println("List Is Empty..");
+			return;
+		}
+		Node p=start;
+		while(p.link.link !=null) {
+			p=p.link;
+		}
+		p.link=null;
+	}
+	public void reveseingLinkedList() {
+		Node p,prev=null,next;
+		 p=start;
+		while(p !=null) {
+			next=p.link;
+			p.link=prev;
+			prev=p;
+			p=next;
+		}
+		start=prev;
+	}
 }
