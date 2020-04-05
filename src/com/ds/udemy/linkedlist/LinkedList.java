@@ -290,4 +290,34 @@ public class LinkedList {
 		}
 		start=prev;
 	}
+	public void insertOrder(int data) {
+		Node temp =new Node(data);
+		if(start == null || data<start.info ) {
+			temp.link=start;
+			start=temp;
+			return ;
+		}
+		Node p=start;
+		while(p.link !=null && p.link.info <= data) {
+			p=p.link;
+		}
+		temp.link=p.link;
+		p.link=temp;
+		
+	}
+	int position=1;
+	public void search(int element) {
+		
+		Node p=start;
+		while(p !=null && p.info<=element) {
+			if(p.info == element)
+				break;
+			position++;
+			p=p.link;
+		}
+		if(p == null || p.info != element) {
+			System.out.println("Elemt Not Found..");
+		}else {
+			System.out.println("Element found postion : "+position);
+		}	}
 }

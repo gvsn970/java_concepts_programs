@@ -6,10 +6,9 @@ public class RunnerDemo {
 		
 		CircularLinkedList cl=new CircularLinkedList();
 		cl.insertEmptyList(5);
+		cl.insertLastNode(10);
 		cl.insertLastNode(15);
-		cl.insertLastNode(20);
-		cl.insertElementBeginning(10);
-		cl.deleteLastNode();
+		cl.beforeNode(11, 5);
 		cl.display();
 	}
 }
