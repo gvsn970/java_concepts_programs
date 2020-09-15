@@ -13,8 +13,7 @@ public class SingleTon {
 class Test{
 	private static Test t=new Test();
 	
-	private Test(){
-		
+	private Test() {
 	}
 	public static Test getTest(){
 		System.out.println("SinglTon");
