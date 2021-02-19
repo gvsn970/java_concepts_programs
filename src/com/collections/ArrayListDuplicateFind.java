@@ -1,8 +1,11 @@
 package com.collections;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.stream.Stream;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+
 
 public class ArrayListDuplicateFind {
 
@@ -19,27 +22,18 @@ public class ArrayListDuplicateFind {
 		al.add(57);
 		System.out.println("Duplicates : "+al);
 		
-		System.out.println();
+		List<Integer> num=al.stream().distinct().collect(Collectors.toList());
+		System.out.println(num);
+
+		String[] arr= {"aa","bb","aa","dd","rr"};
+		List<String> listArr=Arrays.asList(arr);
+		System.out.println(listArr);
+		List<String> outDuplicate=listArr.stream().distinct().collect(Collectors.toList());
+		System.out.println(outDuplicate);
 		
-		Stream<Integer> stream = al.stream();
-		stream.reduce((first, second) -> second)
-		  .orElse(null);
-		//stream.forEach(System.out:: println);;
-		
-		/*System.out.println("With Duplciates :");
-		for(int i=0; i<al.size();i++) {
-			for(int j=i+1;j<al.size();j++) {
-				if(al.get(i).equals(al.get(j))) {
-					System.out.println(al.get(j));
-				}
-			}
+		String[] arr1= outDuplicate.toArray(new String[0]);
+		for(int i=0;i<arr1.length;i++) {
+			System.out.println(arr1[i]);
 		}
-		HashSet set=new HashSet();
-		System.out.println();
-		for(Integer r : al) {
-			if(set.add(r) == false) {
-				System.out.println(r);
-			}
-		}*/
 	}
 }

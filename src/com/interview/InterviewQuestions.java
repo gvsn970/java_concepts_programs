@@ -21,6 +21,12 @@ public class InterviewQuestions {
         double y = 100.1;
        // boolean b = (x = y); /* Line 7 */
         System.out.println(b);
+        
+        String s="surya";
+        String s2="surya";
+        String s1=new String("surya");
+        s1.intern();
+        System.out.println(s1==s);
 		
 	}
 	
