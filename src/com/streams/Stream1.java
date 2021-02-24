@@ -30,5 +30,7 @@ public class Stream1 {
 		
 		IntSummaryStatistics summry=IntStream.of(2,4,5,6,7,8).summaryStatistics();
 		System.out.println(summry);
+		
+		int[] a= {5,7,1,12,13};
 	}
 }
