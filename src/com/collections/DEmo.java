@@ -2,6 +2,7 @@ package com.collections;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -36,8 +37,8 @@ public class DEmo {
 		l.add(new CNSOExampleEmplyoeeObject("tilak", 4));
 		l.add(new CNSOExampleEmplyoeeObject("surya", 5));
 		
-		//Collections.sort(l,(e1,e2) -> e1.name.compareTo(e2.name));
-		//Collections.sort(l,(e1,e2) -> e1.id>e2.id?1: e1.id <e2.id ? -1 : 0);
+		Collections.sort(l,(e1,e2) -> e1.name.compareTo(e2.name));
+		Collections.sort(l,(e1,e2) -> e1.id>e2.id?1: e1.id <e2.id ? -1 : 0);
 		//l.stream().sorted().collect(Collectors.toList());
 		
 	//l.stream().forEach(System.out::println);
