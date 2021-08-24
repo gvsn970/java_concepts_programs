@@ -10,11 +10,12 @@ public class RandomString {
 
 		// create StringBuffer size of AlphaNumericString
 		StringBuilder sb = new StringBuilder(n);
-
+		System.out.println(Math.random());
 		for (int i = 0; i < n; i++) {
 
 			// generate a random number between
 			// 0 to AlphaNumericString variable length
+
 			int index = (int) (alphanumericstring.length() * Math.random());
 
 			// add Character one by one in end of sb
