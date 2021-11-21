@@ -17,10 +17,9 @@ public class ComparatorDemo {
 		list.add(new EmployeePojo(10, "YT", "100000"));
 
 		Collections.sort(list, new EmpNameSorter());
-		List<EmployeePojo> l1 = list.stream().filter(p -> Integer.parseInt(p.getSalary()) > 50000)
-				.collect(Collectors.toList());
-		for (EmployeePojo emp : l1) {
-			System.out.println(emp.getEmpName());
+		
+		for (EmployeePojo emp : list) {
+			System.out.println(emp);
 		}
 
 	}

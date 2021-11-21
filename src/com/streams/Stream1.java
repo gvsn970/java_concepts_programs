@@ -19,7 +19,7 @@ public class Stream1 {
 		System.out.println();
 		
 		String[]  str= {"ABc","ASB","SBI","WAS","ORT"};
-		Arrays.stream(str).filter(x->x.endsWith("S")).sorted().forEach(System.out::print);
+		Arrays.stream(str).filter(x->x.endsWith("c")).sorted().forEach(System.out::print);
 		System.out.println();
 		
 		Arrays.stream(new int[] {2,4,5,6,7,8}).map(x->x*x).average().ifPresent(System.out::print);
