@@ -2,24 +2,30 @@ package com.collections;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class ComparatorDemo {
 
 	public static void main(String[] args) {
-		ArrayList<EmployeePojo> list = new ArrayList<EmployeePojo>();
-		list.add(new EmployeePojo(11, "ZS", "23233"));
-		list.add(new EmployeePojo(1, "BC", "30000"));
-		list.add(new EmployeePojo(41, "ZC", "20000"));
-		list.add(new EmployeePojo(81, "DE", "50000"));
-		list.add(new EmployeePojo(31, "QW", "60000"));
-		list.add(new EmployeePojo(10, "YT", "100000"));
 
-		Collections.sort(list, new EmpNameSorter());
-		
-		for (EmployeePojo emp : list) {
-			System.out.println(emp);
+		int[] ch = { 1, 1, 2, 1, 2, 1, 3 };
+		int lenght = ch.length;
+		int count = 0;
+		for (int i = 0; i < lenght; i++) {
+			for (int j = i + 1; j < lenght; j++) {
+				if (ch[i] == ch[j]) {
+					count++;
+				}
+			}
+			HashMap<Integer, Integer> hs = new HashMap<>();
+			if(!hs.containsKey(ch[i])) {
+				hs.put(ch[i], count);
+			}
+			
+			System.out.println(hs);
+			count = 0;
 		}
 
 	}

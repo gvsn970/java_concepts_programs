@@ -1,23 +1,29 @@
 package com.Adv.Threads;
 
-public class ThreadGroupDemo1 implements Runnable{
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
-	public void run() {  
-        System.out.println(Thread.currentThread().getName());  
-  }  
- public static void main(String[] args) {  
-	 ThreadGroupDemo1 runnable = new ThreadGroupDemo1();  
-        ThreadGroup tg1 = new ThreadGroup("Parent ThreadGroup");  
-          
-        Thread t1 = new Thread(tg1, runnable,"one");  
-        t1.start();  
-        Thread t2 = new Thread(tg1, runnable,"two");  
-        t2.start();  
-        Thread t3 = new Thread(tg1, runnable,"three");  
-        t3.start();  
-             
-        System.out.println("Thread Group Name: "+tg1.getName());  
-       tg1.list();  
+public class ThreadGroupDemo1 {
 
-  }  
+	public static void main(String[] args) {
+		int age=20;
+		if(age>19) {
+			throw new Emp("Custom Exeption ");
+		}
+			
+	}
+}
+
+class Emp extends RuntimeException{
+	private String s;
+
+	public Emp(String string) {
+		super(string);
+	}
+
+	
+	
+
 }

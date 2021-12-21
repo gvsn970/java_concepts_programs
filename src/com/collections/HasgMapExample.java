@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class HasgMapExample {
+public class HasgMapExample  {
 
 	public static void greeting() {
 		System.out.println("Hello World");

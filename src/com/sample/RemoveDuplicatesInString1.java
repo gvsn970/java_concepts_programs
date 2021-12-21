@@ -14,11 +14,12 @@ public class RemoveDuplicatesInString1 {
 					count++;
 				}
 			}
-			for (int j = i + 1; j < length; j++) {
-				if (a[i] == a[j]) {
-					a[j] = a[length - 1];
+			for (int k = i + 1; k < length; k++) {
+				if (a[i] == a[k]) {
+					a[k] = a[length - 1];
+					//System.err.println(a[length - 1]);
+					//System.err.println(length--);
 					length--;
-					// --;
 				}
 			}
 
