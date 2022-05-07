@@ -20,20 +20,33 @@ public class ArrayListDuplicateFind {
 		al.add(87);
 		al.add(37);
 		al.add(57);
-		System.out.println("Duplicates : "+al);
+		
+		ArrayList<Integer> a2=new ArrayList<>();
+		a2.add(12);
+		a2.add(13);
+		a2.add(12);
+		a2.add(13);
+		a2.add(23);
+		a2.add(23);
+		a2.add(87);
+		a2.add(37);
+		a2.add(57);
+		
+		
+		
 		
 		List<Integer> num=al.stream().distinct().collect(Collectors.toList());
 		System.out.println(num);
 
-		String[] arr= {"aa","bb","aa","dd","rr"};
-		List<String> listArr=Arrays.asList(arr);
-		System.out.println(listArr);
-		List<String> outDuplicate=listArr.stream().distinct().collect(Collectors.toList());
-		System.out.println(outDuplicate);
-		
-		String[] arr1= outDuplicate.toArray(new String[0]);
-		for(int i=0;i<arr1.length;i++) {
-			System.out.println(arr1[i]);
-		}
+//		String[] arr= {"aa","bb","aa","dd","rr"};
+//		List<String> listArr=Arrays.asList(arr);
+//		System.out.println(listArr);
+//		List<String> outDuplicate=listArr.stream().distinct().collect(Collectors.toList());
+//		System.out.println(outDuplicate);
+//		
+//		String[] arr1= outDuplicate.toArray(new String[0]);
+//		for(int i=0;i<arr1.length;i++) {
+//			System.out.println(arr1[i]);
+//		}
 	}
 }

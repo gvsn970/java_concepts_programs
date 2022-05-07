@@ -16,7 +16,7 @@ public class RemoveDuplicates {
 				if(a[i]==a[j]){
 					a[j]=a[len-1];
 					len--;
-					j--;
+					
 				}
 				
 			}

@@ -18,6 +18,7 @@ public class RemoveDuplicatesFromList {
 			set.add(e);
 		}
 		System.out.println(set);
+		String s="";
 		
 	}
 

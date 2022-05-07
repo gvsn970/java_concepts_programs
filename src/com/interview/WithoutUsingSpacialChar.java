@@ -1,3 +1,4 @@
+
 package com.interview;
 
 public class WithoutUsingSpacialChar {

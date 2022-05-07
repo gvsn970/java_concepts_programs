@@ -15,6 +15,7 @@ public class RevOfNumber {
 			int digit=num%10;
 			System.out.println(digit);
 			rev=rev*10+digit;
+			//rev=rev+digit*d*di;
 			num=num/10;
 			
 			System.out.println(num);
