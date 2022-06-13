@@ -16,11 +16,7 @@ public class CNSOExampleEmplyoeeObject {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public CNSOExampleEmplyoeeObject(String name, int id) {
-		super();
-		this.name = name;
-		this.id = id;
-	}
+	
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
@@ -31,5 +27,11 @@ public class CNSOExampleEmplyoeeObject {
 		builder.append("]");
 		return builder.toString();
 	}
+	public CNSOExampleEmplyoeeObject(String name, int id) {
+		super();
+		this.name = name;
+		this.id = id;
+	}
+	
 	
 }
