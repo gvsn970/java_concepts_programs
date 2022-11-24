@@ -14,6 +14,7 @@ public class RemoveDuplicates {
 			}
 			for(int j=i+1;j<len;j++){
 				if(a[i]==a[j]){
+					
 					a[j]=a[len-1];
 					len--;
 					

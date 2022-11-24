@@ -31,7 +31,7 @@ public class DEmo {
 		sortedList.forEach(System.out::println);  
 	
 		List<CNSOExampleEmplyoeeObject> l = new ArrayList<>();
-		l.add(new CNSOExampleEmplyoeeObject("a", 1));
+		l.add(new CNSOExampleEmplyoeeObject("a", 122));
 		l.add(new CNSOExampleEmplyoeeObject("ram", 2));
 		l.add(new CNSOExampleEmplyoeeObject("rahul", 3));
 		l.add(new CNSOExampleEmplyoeeObject("tilak", 4));
@@ -42,6 +42,9 @@ public class DEmo {
 		//l.stream().sorted().collect(Collectors.toList());
 		
 	//l.stream().forEach(System.out::println);
-		l.stream().sorted((CNSOExampleEmplyoeeObject e1,CNSOExampleEmplyoeeObject e2)-> (e1.id>e2.id)?-1:(e1.id<e2.id)?1:0);
+		//l.stream().sorted((CNSOExampleEmplyoeeObject e1,CNSOExampleEmplyoeeObject e2)-> (e1.id>e2.id)?-1:(e1.id<e2.id)?1:0);
+		
+		//l.stream().sorted((e1,e2)->(e1.id>e2.id)?-1:(e1.id<e2.id)?1:0).collect(Collectors.toList());
+		l.forEach(System.out::println);
 		}
 }

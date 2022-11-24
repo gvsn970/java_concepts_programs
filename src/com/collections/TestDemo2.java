@@ -18,5 +18,13 @@ public class TestDemo2 {
 		} else {
 			System.out.println("Not a plindrome Number");
 		}
+		String s= "ABABBAAAA";
+		 int deletetionCount=0;
+	        for(int i=0;i<s.length()-1;i++){
+	            if(s.charAt(i) != s.charAt(i+1)){
+	                 System.out.println(s.charAt(i));
+	            }
+	        }
+	        System.out.println(deletetionCount);
 	}
 }
